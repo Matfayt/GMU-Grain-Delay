@@ -40,13 +40,147 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-42",
+					"maxclass" : "pictslider",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1027.0, 258.737958940551778, 100.0, 100.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "nodes",
+					"nodesnames" : [ "1" ],
+					"nsize" : [ 0.2 ],
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1027.0, 362.737958940551778, 100.0, 100.0 ],
+					"xplace" : [ 0.083333333333333 ],
+					"yplace" : [ 0.083333333333333 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-68",
+					"linecount" : 2,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 667.355884253978729, 50.406553685665131, 211.0, 34.0 ],
+					"presentation_linecount" : 6,
+					"text" : "Qu'est ce qu'on fait avec cette envoloppe ???"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-66",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 394.459735214710236, 136.189178705215454, 61.0, 20.0 ],
+					"text" : "GROOVE"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-64",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 98.0, 697.374996066093445, 150.0, 48.0 ],
+					"text" : "direct signal to mix with output to have a dry/wet knob?"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-62",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 394.459735214710236, 338.811130963928235, 273.0, 20.0 ],
+					"text" : "harmonic tranpose ? 3rd 5th 7th and 8th ?"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-61",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 723.0, 205.960684537887573, 273.0, 20.0 ],
+					"presentation_linecount" : 2,
+					"text" : "Abillity to calculate grain size in fractions of beat ?"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-47",
+					"linecount" : 3,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 164.85660345578674, 81.678885161876678, 185.0, 48.0 ],
+					"text" : "In ableton : Grain size in  Hertz : higher de Hz smaller de grains at higher frequency "
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-37",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 723.0, 183.960684537887573, 231.0, 20.0 ],
+					"text" : "Abillity to sync delay with ableton tempo ?"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-29",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1140.0, 375.237958940551778, 95.0, 75.0 ],
+					"text" : "A fancy user interface like ableton's grain delay using what ?"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-20",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 9,
+					"outlettype" : [ "int", "int", "float", "float", "float", "", "int", "float", "" ],
+					"patching_rect" : [ 613.0, 192.926827361663868, 103.0, 22.0 ],
+					"text" : "transport"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-3",
 					"maxclass" : "jsui",
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1186.0, 288.0, 64.0, 64.0 ]
+					"patching_rect" : [ 1145.0, 276.737958940551778, 64.0, 64.0 ]
 				}
 
 			}
@@ -59,19 +193,6 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 105.5, 167.916671514511108, 35.0, 22.0 ],
 					"text" : "adc~"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 0.0, 0.0, 0.0, 0.168627450980392 ],
-					"id" : "obj-135",
-					"linecount" : 4,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 661.189271577349359, 636.374996066093445, 307.0, 62.0 ],
-					"text" : "NOTE : Triggering a grain by signal-zero crossing is the most precise and the fastest way to do it. It is more likely to require more CPU usage than using the trigger by message method described in the following tab."
 				}
 
 			}
@@ -219,7 +340,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 597.793394437440384, 220.654020776828759, 34.0, 22.0 ],
+					"patching_rect" : [ 442.123536108707867, 236.654020776828759, 34.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -351,7 +472,7 @@
  ]
 					}
 ,
-					"patching_rect" : [ 511.063586175441742, 220.654020776828759, 34.0, 22.0 ],
+					"patching_rect" : [ 355.393727846709226, 236.654020776828759, 34.0, 22.0 ],
 					"saved_object_attributes" : 					{
 						"description" : "",
 						"digest" : "",
@@ -422,83 +543,13 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-					"fontface" : 1,
-					"hint" : "",
-					"id" : "obj-65",
-					"ignoreclick" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 65.000000000000028, 700.874996066093445, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"text" : "1",
-					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
-					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "textbutton[4]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-					"fontface" : 1,
-					"hint" : "",
-					"id" : "obj-64",
-					"ignoreclick" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 335.836282610475109, 172.678885161876678, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"text" : "2",
-					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
-					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "textbutton[3]"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"bubbleside" : 3,
-					"id" : "obj-70",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 362.672677602086537, 172.678885161876678, 120.0, 24.0 ],
-					"text" : "Play with the jitter"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"bubblepoint" : 0.0,
-					"bubbleside" : 0,
-					"id" : "obj-44",
-					"linecount" : 2,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 636.030804185234842, 241.189178705215454, 232.0, 53.0 ],
-					"text" : "Double click on the jit Patch to change randomness parameters"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 11.0,
 					"id" : "obj-54",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 590.293394437440384, 168.960684537887573, 65.0, 19.0 ],
+					"patching_rect" : [ 434.623536108707867, 184.960684537887573, 65.0, 19.0 ],
 					"text" : "Detune jit",
 					"textjustification" : 1
 				}
@@ -512,7 +563,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 503.563586175441742, 168.960684537887573, 65.0, 19.0 ],
+					"patching_rect" : [ 347.893727846709226, 184.960684537887573, 65.0, 19.0 ],
 					"text" : "Begin jit",
 					"textjustification" : 1
 				}
@@ -527,7 +578,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 597.793394437440384, 189.960684537887573, 50.0, 22.0 ],
+					"patching_rect" : [ 442.123536108707867, 205.960684537887573, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 0.25 ],
@@ -553,7 +604,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 1,
-					"patching_rect" : [ 511.063586175441742, 189.960684537887573, 50.0, 22.0 ],
+					"patching_rect" : [ 355.393727846709226, 205.960684537887573, 50.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 1.0 ],
@@ -579,25 +630,8 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 531.058344772466171, 137.733191728591919, 96.0, 23.0 ],
+					"patching_rect" : [ 375.388486443733655, 153.733191728591919, 96.0, 23.0 ],
 					"text" : "Randomness"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"angle" : 270.0,
-					"bgcolor" : [ 0.905882, 0.905882, 0.905882, 0.0 ],
-					"border" : 1,
-					"bordercolor" : [ 0.517647, 0.517647, 0.517647, 1.0 ],
-					"id" : "obj-61",
-					"maxclass" : "panel",
-					"mode" : 0,
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 494.563586175441742, 131.0, 170.792298078536987, 122.118978211799629 ],
-					"proportion" : 0.39,
-					"rounded" : 0
 				}
 
 			}
@@ -653,24 +687,11 @@
 			}
 , 			{
 				"box" : 				{
-					"bubble" : 1,
-					"bubbleside" : 2,
-					"id" : "obj-22",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 347.96099381787451, 554.169869542121887, 141.0, 39.0 ],
-					"text" : "Check signal waveform !"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-13",
 					"maxclass" : "scope~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 208.96099381787451, 599.374996066093445, 419.0, 134.0 ]
+					"patching_rect" : [ 523.459735214710349, 611.374996066093445, 419.0, 134.0 ]
 				}
 
 			}
@@ -773,27 +794,6 @@
 			}
 , 			{
 				"box" : 				{
-					"bgcolor" : [ 1.0, 0.788235, 0.470588, 1.0 ],
-					"fontface" : 1,
-					"hint" : "",
-					"id" : "obj-69",
-					"ignoreclick" : 1,
-					"maxclass" : "textbutton",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "int" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 345.10313175892361, 257.189178705215454, 20.0, 20.0 ],
-					"rounded" : 60.0,
-					"text" : "3",
-					"textcolor" : [ 0.34902, 0.34902, 0.34902, 1.0 ],
-					"textoncolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "textbutton"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"bubbleside" : 2,
 					"id" : "obj-50",
 					"maxclass" : "comment",
@@ -849,18 +849,6 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 138.641598539693064, 286.926827361663811, 93.0, 20.0 ],
 					"text" : "Trigg frequency"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"bubble" : 1,
-					"id" : "obj-40",
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 143.10313175892361, 257.189178705215454, 198.0, 24.0 ],
-					"text" : "Bang to launch one unique grain"
 				}
 
 			}
@@ -1195,23 +1183,6 @@
 					"patching_rect" : [ 494.563586175441742, 3.957835555076599, 170.792298078536987, 97.46430504322052 ],
 					"proportion" : 0.39,
 					"rounded" : 0
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"border" : 0,
-					"filename" : "helpdetails.js",
-					"id" : "obj-46",
-					"ignoreclick" : 1,
-					"jsarguments" : [ "liveGranul~" ],
-					"maxclass" : "jsui",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 3.0, 5.0, 486.0, 124.0 ],
-					"varname" : "jsui"
 				}
 
 			}
@@ -1867,6 +1838,90 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"id" : "obj-70",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1015.0, 246.529158999999993, 250.0, 225.500000307479866 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"id" : "obj-71",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 596.0, 168.676827207923935, 411.0, 73.061131732627842 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"id" : "obj-72",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 161.60313175892361, 74.855539781883294, 192.0, 65.061131732627814 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"id" : "obj-75",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 80.60313175892361, 688.374996066093445, 192.0, 65.061131732627814 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"id" : "obj-76",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 390.60313175892361, 332.676827207924021, 284.642137941048986, 33.061131732627814 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
+					"id" : "obj-77",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 479.0, 30.875987819351209, 411.0, 73.061131732627842 ],
+					"proportion" : 0.5
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -2150,12 +2205,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "helpdetails.js",
-				"bootpath" : "C74:/help/resources",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "jsui_default.js",
 				"bootpath" : "C74:/jsui",
 				"type" : "TEXT",
